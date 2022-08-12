@@ -109,7 +109,7 @@ gulp.task('script', () => {
 
 gulp.task('browserSync', () => {
     browserSync.init({
-        proxy: "nrich-landing.loc"
+        proxy: "homework.loc"
     });
 
     gulp.watch(sourcesObject.allStyles, gulp.series('style'));
