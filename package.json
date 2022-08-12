@@ -1,0 +1,33 @@
+{
+    "name": "ocf",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "gulp watch",
+        "build": "gulp build",
+        "prod": "gulp prod"
+    },
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "browser-sync": "^2.26.7",
+        "cowsay": "^1.4.0",
+        "fs": "0.0.1-security",
+        "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-if": "^3.0.0",
+        "gulp-imagemin": "^6.0.0",
+        "gulp-beautify": "^3.0.0",
+        "gulp-nunjucks": "^5.0.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-svg-sprites": "^4.1.2",
+        "gulp-twig2html": "^2.0.2",
+        "gulp-uglify": "^3.0.2",
+        "gulp-uglifycss": "^1.1.0",
+        "gulp.spritesmith": "^6.10.1"
+    },
+    "devDependencies": {
+        "swiper": "^4.5.1"
+    }
+}

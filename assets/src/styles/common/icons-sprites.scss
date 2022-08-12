@@ -1,0 +1,8 @@
+@import "./sprites";
+
+.s-icon {
+  display: inline-block;
+  &.icon-week-news {
+    @include retina-sprite($add_to_cart_modal_group);
+  }
+}
