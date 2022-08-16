@@ -28,11 +28,6 @@
     }
   }
 
-  &_lg {
-    font-size: 42px;
-    line-height: 46px;
-  }
-
   &_md {
     font-size: 24px;
     line-height: 32px;
@@ -50,13 +45,13 @@
   font-weight: 500;
   letter-spacing: 0;
 
-  &_xl {
+  &_lg {
     font-size: 24px;
     line-height: 36px;
 
   }
 
-  &_lg {
+  &_md {
     font-size: 22px;
     line-height: 28px;
     font-weight: 700;
@@ -73,14 +68,8 @@
     }
   }
 
-  &_md {
+  &_sm {
     font-size: 18px;
     line-height: 28px;
-  }
-
-  &_sm {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
   }
 }

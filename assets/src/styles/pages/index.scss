@@ -1,18 +1,33 @@
-.hero {
-  .wrap-btns button {
-    padding: 14px 30px;
-    border: 2px solid $orange;
-    background: $orange;
-    border-radius: 7px;
-    transition: 0.5s;
+.possibility {
+  &__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 46px;
+    letter-spacing: 0;
+    color: $black;
+  }
+}
 
-    @include below($xs-max) {
-      padding: 10px 20px;
+.logos {
+  background: $gray-mirage;
+
+  &-wrap {
+    &:first-child {
+      text-align: left;
+
+      @include below($md-max) {
+        text-align: center;
+      }
     }
 
-    &:hover {
-      background: transparent;
-      color: $orange;
+    &:last-child {
+      text-align: right;
+
+      @include below($md-max) {
+        text-align: center;
+      }
     }
   }
 }

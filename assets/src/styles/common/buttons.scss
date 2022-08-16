@@ -1,0 +1,16 @@
+.h-btn {
+  padding: 14px 30px;
+  border: 2px solid $orange;
+  background: $orange;
+  border-radius: 7px;
+  transition: 0.5s;
+
+  @include below($xs-max) {
+    padding: 10px 20px;
+  }
+
+  &:hover {
+    background: transparent;
+    color: $orange;
+  }
+}

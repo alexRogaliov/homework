@@ -1,7 +1,22 @@
 {% extends "../layout/base.twig" %}
 
 {% block content %}
-  <section class="hero">
+  {% set cardPostVars = [{
+    image: 'img/card-icon-1.png',
+    text: 'Fully-managed localization process',
+  }, {
+    image: 'img/card-icon-2.png',
+    text: 'Experience with all software formats and codes',
+  }, {
+    image: 'img/card-icon-3.png',
+    text: 'Agile-ready approach',
+  },{
+    image: 'img/card-icon-4.png',
+    text: 'Context-sensitive translation',
+  }
+  ] %}
+
+  <section class="hero p-b-80">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
@@ -10,17 +25,45 @@
             <h4 class="title title_sm m-l-15">Localization Managers</h4>
           </div>
           <h1 class="title title_xl m-b-30">Localized software for a better user experience</h1>
-          <p class="text text_xl m-b-30">Multilingual software is the fastest route to visibility and success among your
+          <p class="text text_lg m-b-30">Multilingual software is the fastest route to visibility and success among your
             global user base. Milengo helps you tackle the technical, cultural and linguistic challenges involved
             in making your apps and solutions accessible in every language</p>
           <div class="wrap-btns m-b-20">
-            <button class="text text_lg">Schedule a call</button>
-            <button class="text text_lg m-l-15">View pricing</button>
+            <a href="#" class="h-btn text text_md">Schedule a call</a>
+            <a href="#" class="h-btn text text_md m-l-15">View pricing</a>
           </div>
         </div>
         <div class="col-lg-6">
           <img src="img/hero.png" alt="">
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="possibility p-t-40 p-b-70">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="possibility__title m-b-50">Why Milengo?</h2>
+        </div>
+        {% for item in cardPostVars %}
+          <div class="col-lg-3 col-md-6">
+            {% include '../cards/card-icon.twig' with item %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  <section class="logos p-t-80 p-b-60">
+    <div class="container">
+      <div class="row logos-wrap">
+        <div class="col-lg-2 col-md-4 col-6 m-b-20"><img src="img/logo-1.png" alt=""></div>
+        <div class="col-lg-2 col-md-4 col-6 text-center m-b-20"><img src="img/logo-2.png" alt=""></div>
+        <div class="col-lg-2 col-md-4 col-6 text-center m-b-20"><img src="img/logo-3.png" alt=""></div>
+        <div class="col-lg-2 col-md-4 col-6 text-center m-b-20"><img src="img/logo-4.png" alt=""></div>
+        <div class="col-lg-2 col-md-4 col-6 text-center m-b-20"><img src="img/logo-5.png" alt=""></div>
+        <div class="col-lg-2 col-md-4 col-6 m-b-20"><img src="img/logo-6.png" alt=""></div>
       </div>
     </div>
   </section>
