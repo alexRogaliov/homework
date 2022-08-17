@@ -72,4 +72,14 @@
     font-size: 18px;
     line-height: 28px;
   }
+
+  &_xsm {
+    font-size: 14px;
+    line-height: 20px;
+    color: $grayscale;
+  }
+}
+
+.f-bold {
+  font-weight: 700;
 }
