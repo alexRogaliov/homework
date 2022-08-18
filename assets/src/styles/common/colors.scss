@@ -1,5 +1,7 @@
 $black: #131D2A;
-$white: #F5F5F5;
+$light-grey: #F5F5F5;
+$bg-page: #F8FAFC;
+$white: #FCFCFC;
 $gray: #5A697C;
 $orange: #FA6F2C;
 $blue: #4B83AA;
@@ -9,12 +11,8 @@ $red: #ef6b51;
 $grayscale: #8895A5;
 $shadow: 0px 25px 50px rgba(0, 58, 90, 0.1);
 
-.c-orange {
-  color: $orange;
-}
-
-.c-blue {
-  color: $blue;
+.c-gray {
+  color: $gray;
 }
 
 .c-black {

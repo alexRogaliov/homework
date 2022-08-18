@@ -16,21 +16,71 @@
   }
   ] %}
 
+  {% set cardFeatureVars = [{
+    image: 'img/feature-1.png',
+    title: 'No more trial & error when going global',
+    text: 'From complex ERP systems to mobile consumer apps – creating a seamless user experience for software across
+    different languages requires a collaborative effort between product teams, translators, reviewers and developers.
+    An experienced one-stop shop like Milengo not only delivers translated text, but boosts your localization
+    initiatives with expertise in process optimization, system integration, language quality assurance, product
+    testing and more. Handle localization efficiently across departements and allow your teams to collaborate,
+    manage and review translations in a seamless way.',
+  }, {
+    image: 'img/feature-2.png',
+    title: 'A natural fit for agile teams',
+    text: 'During agile sprints, content updates occur every few days or weeks. Translating this content in time
+    requires maximum efficiency in the processing and file handling steps and a smooth workflow for project managers
+    and translators. Having a set up in place that meets even the tightest deadlines, we ensure that delays are not
+     propagated throughout your entire release schedule. And in case you want to launch your software in additional
+     markets at a later stage, we provide all the scalability you need: For our biggest software clients, we juggle
+     time-critical release schedules across dozens of product and languages.',
+  }, {
+    image: 'img/feature-3.png',
+    title: 'Eliminate human touchpoints ',
+    text: 'Our localization platform offers the option of direct integration into repository tools like GitHub,
+    allowing for the most frictionless localization process you have ever experienced. Easily extract from your
+    code, upload to translation and synchronize again. Meanwhile, our localization engineers increase productivity
+    with custom-developed scripts for file processing, saving you time and effort in exporting and importing translated
+    content. For maximum speed of service, consult with our solution architects to find out how to best leverage the
+    benefits of enterprise-grade MT for your software projects.',
+  },{
+    image: 'img/feature-4.png',
+    title: 'In-context translation for maximum ease of use ',
+    text: 'Context is crucial for translators to boost localization accuracy while allowing users to operate your
+    software smoothly and intuitively in their own language. Missing visual context, on the other hand, can lead to
+    UI misalignment and design breaks. Our translation tools help translators do their best work by giving them the
+    maximum amount of info on how the respective string is going to be used in your user interface. For optimum
+    quality, we also establish a streamlined query management process to pool and manage questions from translators
+    in one place.',
+  }
+  ] %}
+
+  {% set cardHorizontalVars = [{
+    image: 'img/card-horizontal-1.png',
+    text: 'Case Study: Infor',
+  }, {
+    image: 'img/card-horizontal-2.png',
+    text: 'Solution brief: In-context software localization',
+  }, {
+    image: 'img/card-horizontal-3.png',
+    text: 'Tip Sheet: Cross-platform software localization',
+  }] %}
+
   <section class="hero p-b-80 m-t-90">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="d-flex align-items-center m-b-30">
             <img src="img/icon-pencil.png" alt="">
-            <h4 class="title title_sm m-l-15 c-black">Localization Managers</h4>
+            <h4 class="title title_sm m-l-15">Localization Managers</h4>
           </div>
-          <h1 class="title title_xl m-b-30">Localized software for a better user experience</h1>
+          <h1 class="title title_xxl m-b-30">Localized software for a better user experience</h1>
           <p class="text text_lg m-b-30">Multilingual software is the fastest route to visibility and success among your
             global user base. Milengo helps you tackle the technical, cultural and linguistic challenges involved
             in making your apps and solutions accessible in every language</p>
-          <div class="wrap-btns m-b-20">
-            <a href="#" class="h-btn text text_md">Schedule a call</a>
-            <a href="#" class="h-btn text text_md m-l-15">View pricing</a>
+          <div class="d-flex flex-wrap">
+            <a href="#" class="h-btn text text_md m-r-15 m-b-20">Schedule a call</a>
+            <a href="#" class="h-btn text text_md m-b-20">View pricing</a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -54,7 +104,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="logos p-t-80 p-b-60">
     <div class="container">
       <div class="row logos-wrap">
@@ -67,4 +117,48 @@
       </div>
     </div>
   </section>
+
+  <section class="future p-t-100">
+    <div class="container">
+      {% for items in cardFeatureVars %}
+        {% include '../cards/card-feature.twig' with items %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="statement text-center p-b-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <img class="m-b-25" src="img/quotes.png" alt="">
+          <p class="title title_md m-b-30">Our customer base includes many of the world’s largest companies and brands,
+            and it’s critical that we deliver extremely high-quality localized versions of our products. In Milengo
+            we have a vendor that we can depend upon to consistently meet our expectations</p>
+          <p class="title title_sm m-b-70">Arie van den Berg <span class="c-gray">- Senior Global Director, Infor</span>
+          </p>
+          <img src="img/infor.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container start p-t-80 p-b-80">
+    <div class="row">
+      <div class="col-lg-5 offset-lg-1">
+        <h2 class="title title_xl m-b-20">Start translating today</h2>
+        <p class="text m-b-40">Publish large-scale, technically accurate translations always on time – even in highly
+          specialized industry domains.</p>
+        <div class="d-flex flex-wrap">
+          <a href="#" class="h-btn text text_md m-r-15 m-b-20">Start translating</a>
+          <a href="#" class="h-btn text text_md m-b-20">Connect sales</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        {% for item in cardHorizontalVars %}
+          {% include '../cards/card-horizontal.twig' with item %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
 {% endblock %}

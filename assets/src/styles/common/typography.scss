@@ -4,11 +4,11 @@
   line-height: 40px;
   font-weight: 700;
   letter-spacing: 0;
+  color: $black;
 
-  &_xl {
+  &_xxl {
     font-size: 64px;
     line-height: 70px;
-    color: $black;
     letter-spacing: -0.5px;
 
     @include below($lg-max) {
@@ -25,6 +25,21 @@
       font-size: 38px;
       line-height: 44px;
       text-align: center;
+    }
+  }
+
+  &_xl {
+    font-size: 52px;
+    line-height: 58px;
+  }
+
+  &_lg {
+    font-size: 42px;
+    line-height: 46px;
+
+    @include below($md-max) {
+      font-size: 37px;
+      line-height: 41px;
     }
   }
 
@@ -55,7 +70,7 @@
     font-size: 22px;
     line-height: 28px;
     font-weight: 700;
-    color: $white;
+    color: $light-grey;
 
     @include below($md-max) {
       font-size: 20px;
@@ -72,12 +87,12 @@
     font-size: 18px;
     line-height: 28px;
   }
+}
 
-  &_xsm {
-    font-size: 14px;
-    line-height: 20px;
-    color: $grayscale;
-  }
+.subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: $grayscale;
 }
 
 .f-bold {

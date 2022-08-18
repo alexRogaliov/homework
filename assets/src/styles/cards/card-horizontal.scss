@@ -1,0 +1,21 @@
+.card-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: $white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: $gray-mirage;
+  }
+
+  &-inner__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+  }
+}
+

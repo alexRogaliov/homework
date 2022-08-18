@@ -1,7 +1,3 @@
-//.hero {
-//  margin-top: 100px;
-//}
-
 .possibility {
   &__title {
     font-family: 'Ubuntu', sans-serif;
@@ -34,4 +30,10 @@
       }
     }
   }
+}
+
+.start {
+  border-radius: 10px;
+  background: $bg-page;
+  box-shadow: $shadow;
 }

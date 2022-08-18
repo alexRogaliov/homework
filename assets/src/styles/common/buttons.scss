@@ -4,7 +4,7 @@
   background: $orange;
   border-radius: 7px;
   transition: 0.5s;
-  color: $white;
+  color: $light-grey;
 
   @include below($xs-max) {
     padding: 10px 20px;
