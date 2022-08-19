@@ -179,11 +179,11 @@ pre {
 
 // bootstrap classes
 .text-right {
-  text-align: right !important;
+  text-align: right;
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 .m-auto {
@@ -285,5 +285,11 @@ pre {
   .p-x-#{$i*5} {
     padding-left: #{$i*5}px;
     padding-right: #{$i*5}px;
+  }
+}
+
+.text-lg-right {
+  @include above($lg-min) {
+    text-align: right;
   }
 }

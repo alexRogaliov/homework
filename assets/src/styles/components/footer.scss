@@ -1,0 +1,20 @@
+.footer {
+  background: $mystic;
+
+  &-top {
+    padding-bottom: 120px;
+    border-bottom: 1px solid $gray;
+
+    .more-wrapper {
+      a {
+        transition: 0.3s;
+      }
+      a:hover {
+        margin-right: 10px;
+      }
+      img {
+        object-fit: none;
+      }
+    }
+  }
+}
